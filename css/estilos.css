@@ -1,0 +1,130 @@
+:root {
+    --color-fondo: #ffefdd;
+    --color-primario: rgb(105, 174, 174);
+    --color-texto:black;
+    --color-boton-wpp: rgb(148, 225, 220);
+    --color-titulos: rgb(19, 78, 108);
+}
+body{
+    background-color: var(--color-boton-wpp);
+}
+h1{
+    text-align: center;
+}
+nav{
+    background-color: var(--color-primario);
+    text-align: center;
+    padding: 3px;
+}
+.menu{
+    color: var(--color-fondo);
+    padding: 5px;
+}
+.menu:hover{
+    color: var(--color-texto);
+}
+h2{
+    text-align: center;
+    color: var(--color-titulos);
+}
+a{
+    text-decoration: none;
+}
+.name_img{
+    color: var(--color-boton-wpp);
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pre{
+    color: var(--color-fondo);
+}
+.img{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 5px;
+}
+.imagen{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: var(--color-primario);
+}
+h3{
+    text-align: center;
+    background-color: var(--color-primario);
+}
+.container{
+    text-align: center;
+    background-color: var(--color-primario);
+}
+h4{
+    text-align: center;
+}
+.precio{
+    text-align: center;
+}
+h5{
+    color: var(--color-titulos);
+    font-size: 20px;
+}
+.texto{
+    padding: 20px;
+    text-align: justify;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+.compra{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 10px;
+}
+.nos{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10px;
+}
+.footer{
+    text-align: center;
+    clear: both;
+    padding: 1px;
+    color: var(--color-fondo);
+    background-color: var(--color-primario);
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .img{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        gap: 5px;
+    }
+    .far{
+        height: 200px;
+        width: 420px;
+    }
+    .texto{
+        padding: 20px;
+        text-align: justify;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+    .nos{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        gap: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .img{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 5px;
+    }
+    .far{
+        height: 450px;
+        width: 400px;
+    }
+    .texto{
+        padding: 20px;
+        text-align: justify;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 19px;
+    }
+}

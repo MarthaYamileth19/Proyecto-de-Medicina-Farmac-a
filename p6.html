@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Farmacía Salud y Vida</h1>
+    <nav>
+        <a href="index.html" class="menu">Inicio</a>
+        <a href="Nosotros.html" class="menu">Nosotros</a>
+    </nav>
+    <br>
+</header>
+<div class="container">
+    <div class="product">
+        <br>
+        <img src="img/misoprostol-Photoroom.png" alt="">
+        <h2>Cyrux Misoprostol 200 Mcg Caja C/28 Tabletas</h2>
+        <p class="texto">La misoprostol es un medicamento en forma de pastilla que se utiliza para: Prevenir y tratar las úlceras gástricas y duodenales,
+        Inducir el parto y la expulsión del feto en casos de aborto espontáneo o inducido, Tratar la hemorragia posparto</p>
+        <p><strong>Precio: $669</p>
+        </strong></p>
+    <div class="actions">
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+        <button onclick="addToCart()">Agregar al Carrito</button>
+    </div>
+</div>
+<script>
+    function addToCart() {
+        const quantity = document.getElementById('quantity').value;
+        alert(`Has agregado ${quantity} producto(s) al carrito.`);
+    }
+</script>
+<br>
+</div>
+<br>
+<footer class="footer">
+    <p>Farmacía - Todos los derechos Reservados 2025</p>
+</footer>
+</body>
+</html>
